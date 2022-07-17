@@ -73,5 +73,15 @@ namespace EverCraft.CsTests
             var defender = new Character();
             attacker.Attack(defender, attackRoll).ShouldBe(attackResult);
         }
+        [Fact]
+        public void ShouldAlwaysHitWithA20()
+        {
+            var attacker = new Character();
+            var defender = new Character()
+            {
+                ArmorClass = 21
+            };
+            attacker.Attack(defender, 20).ShouldBe(true);
+        }
     }
 }
