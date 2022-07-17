@@ -52,5 +52,17 @@ namespace EverCraft.CsTests
             var subject = new Character();
             subject.HitPoints.ShouldBe(5);
         }
+        [Theory]
+        [InlineData(5)]
+        [InlineData(10)]
+        [InlineData(15)]
+        public void ShouldAllowHitPointsToBeSet(int newHitPoints)
+        {
+            var subject = new Character
+            {
+                HitPoints = newHitPoints
+            };
+            subject.HitPoints.ShouldBe(newHitPoints);
+        }
     }
 }
