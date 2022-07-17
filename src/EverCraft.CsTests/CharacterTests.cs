@@ -64,12 +64,11 @@ namespace EverCraft.CsTests
             };
             subject.HitPoints.ShouldBe(newHitPoints);
         }
-        [Fact]
-        public void ShouldSuccessfullyAttackOthers()
+        [Theory]
+        [InlineData(10,true)]
+        [InlineData(9, false)]
+        public void ShouldAttackOthers(int attackRoll, bool attackResult)
         {
-            var attackRoll = 10;
-            var attackResult = true;
-
             var attacker = new Character();
             var defender = new Character();
             attacker.Attack(defender, attackRoll).ShouldBe(attackResult);
