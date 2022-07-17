@@ -28,5 +28,21 @@ namespace EverCraft.CsTests
             };
             subject.Alignment.ShouldBe(alignment);
         }
+        [Fact]
+        public void ShouldHaveArmorClassOf10ByDefault()
+        {
+            var subject = new Character();
+            subject.ArmorClass.ShouldBe(10);
+        }
+        [Theory]
+        [InlineData(15)]
+        public void ShouldAllowArmorClassToBeSet(int newArmorClass)
+        {
+            var subject = new Character
+            {
+                ArmorClass = newArmorClass
+            };
+            subject.ArmorClass.ShouldBe(newArmorClass);
+        }
     }
 }
