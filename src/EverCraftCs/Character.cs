@@ -7,5 +7,10 @@
             get;
             set;
         }
+        public Alignment Alignment 
+        {
+            get;
+            set;
+        }
     }
 }
