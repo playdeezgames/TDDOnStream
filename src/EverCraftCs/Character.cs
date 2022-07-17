@@ -27,5 +27,10 @@
             get;
             set;
         }
+
+        public bool Attack(Character defender, int attackRoll)
+        {
+            return attackRoll >= defender.ArmorClass;
+        }
     }
 }

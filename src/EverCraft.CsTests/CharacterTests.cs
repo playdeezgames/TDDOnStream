@@ -64,5 +64,15 @@ namespace EverCraft.CsTests
             };
             subject.HitPoints.ShouldBe(newHitPoints);
         }
+        [Fact]
+        public void ShouldSuccessfullyAttackOthers()
+        {
+            var attackRoll = 10;
+            var attackResult = true;
+
+            var attacker = new Character();
+            var defender = new Character();
+            attacker.Attack(defender, attackRoll).ShouldBe(attackResult);
+        }
     }
 }
