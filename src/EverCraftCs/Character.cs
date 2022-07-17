@@ -5,6 +5,7 @@
         public Character()
         {
             ArmorClass = 10;
+            HitPoints = 5;
         }
         public string? Name 
         {
@@ -17,6 +18,11 @@
             set;
         }
         public int ArmorClass
+        {
+            get;
+            set;
+        }
+        public int HitPoints
         {
             get;
             set;

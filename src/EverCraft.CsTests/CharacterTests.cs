@@ -46,5 +46,11 @@ namespace EverCraft.CsTests
             };
             subject.ArmorClass.ShouldBe(newArmorClass);
         }
+        [Fact]
+        public void ShouldHaveHitPointsOf5ByDefault()
+        {
+            var subject = new Character();
+            subject.HitPoints.ShouldBe(5);
+        }
     }
 }
