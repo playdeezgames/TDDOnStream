@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverCraft.CsTests", "EverCraft.CsTests\EverCraft.CsTests.csproj", "{1F0660BB-0B58-41F7-97B7-21AB1080146B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverCraftCs", "EverCraftCs\EverCraftCs.csproj", "{BFB82862-4C45-4F20-A790-864B5255F004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F0660BB-0B58-41F7-97B7-21AB1080146B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0660BB-0B58-41F7-97B7-21AB1080146B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0660BB-0B58-41F7-97B7-21AB1080146B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0660BB-0B58-41F7-97B7-21AB1080146B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB82862-4C45-4F20-A790-864B5255F004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB82862-4C45-4F20-A790-864B5255F004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB82862-4C45-4F20-A790-864B5255F004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB82862-4C45-4F20-A790-864B5255F004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56413AE8-FBF9-43B4-A7DD-214C486DCABB}
+	EndGlobalSection
+EndGlobal
