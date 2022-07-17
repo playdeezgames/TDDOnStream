@@ -35,6 +35,8 @@ namespace EverCraft.CsTests
             subject.ArmorClass.ShouldBe(10);
         }
         [Theory]
+        [InlineData(5)]
+        [InlineData(10)]
         [InlineData(15)]
         public void ShouldAllowArmorClassToBeSet(int newArmorClass)
         {
